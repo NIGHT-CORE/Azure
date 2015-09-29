@@ -40,7 +40,7 @@
                                 <a href="<?php $category->permalink(); ?>" class="button">
                                     <?php $category->name(); ?>
                                 </a>
-                            </li>
+                            </li> 
                             <?php endwhile; ?>
                 </ul>
             </nav>
