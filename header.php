@@ -34,11 +34,11 @@
             </hgroup>
             <nav class="nav">
                 <ul class="nav-list">
-                    <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
-                        <?php while($pages->next()): ?>
+                    <?php $this->widget('Widget_Metas_Category_List')->to($category); ?>
+                        <?php while($category->next()): ?>
                             <li class="nav-item">
-                                <a href="<?php $pages->permalink(); ?>" class="button">
-                                    <?php $pages->title(); ?>
+                                <a href="<?php $category->permalink(); ?>" class="button">
+                                    <?php $category->name(); ?>
                                 </a>
                             </li>
                             <?php endwhile; ?>
